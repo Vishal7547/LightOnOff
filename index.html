@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightOnOff</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+      .top{
+       
+       max-width: 500px;
+       height:500px;
+       margin:50px auto;
+       text-align: center;
+       background-color:#f2f2f2;
+       border-radius: 10px;
+
+      }
+      .on1{
+          border:none;
+          background-color: aqua;
+          color:aliceblue;
+          font-weight: bold;
+          text-transform: uppercase;
+          text-align: center;
+          margin:30px;
+          height:30px;
+          width:150px;
+
+      }
+      .on1:focus{
+          background-color:green;
+      }
+      .on:hover{
+          background-color: skyblue;
+      }
+      h1{
+          text-transform: uppercase;
+          font-weight: bold;
+          text-align: center;
+          text-shadow: 2px 3px red;
+      }
+
+     
+       
+
+    </style>
+</head>
+<body>
+    <h1>light on and off</h1>
+    <div class="top">
+        <img id="sum11"    width="200px"   height="400px" src="yellow-removebg-preview.png" alt="lightOn">
+        <div class="under1"> <button type ="button" class="on1" onclick ="onOff(0)">Light on</button> <button type ="button" class="on1" onclick ="onOff(1)">Light off</button></div>
+       
+    </div>
+    <script>
+        function onOff(val1){
+            var data1;
+            if(val1==0){
+                data1 = "yellow-removebg-preview.png"
+            }else{
+                data1 = "Daco_4593815-removebg-preview.png"
+            }
+            document.getElementById('sum11').src = data1;
+        }
+    </script>
+</body>
+</html>
